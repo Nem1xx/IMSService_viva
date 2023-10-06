@@ -1891,7 +1891,7 @@
 
     .line 908
     .local v0, "subId":I
-    invoke-static {v0}, Landroid/telephony/SubscriptionManager;->isValidSubscriptionId(I)Z
+    invoke-static {v0}, Landroid/telephony/TelephonyManagerr;->isValidSubscriptionId(I)Z
 
     move-result v2
 
@@ -2685,7 +2685,7 @@
     .param p1, "slot"    # I
 
     .line 895
-    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
+    invoke-static {p1}, Landroid/telephony/TelephonyManagerr;->getSubId(I)[I
 
     move-result-object v0
 
@@ -2700,7 +2700,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
+    invoke-static {}, Landroid/telephony/TelephonyManagerr;->getDefaultDataSubscriptionId()I
 
     move-result v1
 
@@ -3538,13 +3538,13 @@
 
     .line 1480
     :cond_0
-    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
+    invoke-static {}, Landroid/telephony/TelephonyManagerr;->getDefaultDataSubscriptionId()I
 
     move-result v0
 
     .line 1481
     .local v0, "subId":I
-    invoke-static {v0}, Landroid/telephony/SubscriptionManager;->isValidSubscriptionId(I)Z
+    invoke-static {v0}, Landroid/telephony/TelephonyManagerr;->isValidSubscriptionId(I)Z
 
     move-result v2
 
@@ -3689,13 +3689,13 @@
 
     .line 1527
     :cond_0
-    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
+    invoke-static {}, Landroid/telephony/TelephonyManagerr;->getDefaultDataSubscriptionId()I
 
     move-result v0
 
     .line 1528
     .local v0, "ddSubId":I
-    invoke-static {v0}, Landroid/telephony/SubscriptionManager;->isValidSubscriptionId(I)Z
+    invoke-static {v0}, Landroid/telephony/TelephonyManagerr;->isValidSubscriptionId(I)Z
 
     move-result v2
 

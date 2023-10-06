@@ -14573,7 +14573,7 @@
 
     .line 1492
     :cond_4
-    invoke-static {p2}, Landroid/telephony/SubscriptionManager;->getSimStateForSlotIndex(I)I
+    invoke-static {p2}, Landroid/telephony/TelephonyManager;->getSimStateForSlotIndex(I)I
 
     move-result v3
 
